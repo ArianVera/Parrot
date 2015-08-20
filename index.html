@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>parrot</title>
+</head>
+<style>
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-size: 12pt;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+body {
+	line-height: 1;
+	width:100%; 
+	height:100%;
+    /*background-color:#220023;*/
+	background-color:#4d1b4e;
+	overflow-y: scroll;
+	font-family:"Nexa Light", Arial, sans-serif;
+
+}
+
+.top_bar{position: fixed; top: 0px; right: 0px; left: 0px; z-index: 1000;}
+
+.top_nav{ width:100%; height:46px; position:relative; border-bottom: 2px solid rgba(138, 1, 140, 0.55); }
+
+.top_nav_inner{height:46px; background: #FFF none repeat scroll 0% 0%;}
+
+.top_nav .container{text-align:center; width:100%; max-width:1195px; min-width: 760px;  line-height:46px;}
+
+.container{width:1195px; margin:0 auto;}
+
+.logo{background:url(parrot_logo.png) no-repeat center center; background-size:cover; width:95px; height:30px; display:inline-block; position:relative; top:8px; }
+
+.left_side_nav{float:left;}
+
+.left_actions{margin-right: 12px; text-align:left; color:#272727;}
+
+.left_actions li{float:left; height:46px; overflow:hidden; padding: 0px 14px 0px 4px;}
+
+.icon{float:left; width:25px; height:25px; margin-right:5px; position:relative; top:10px;}
+
+.icon_home{background:url(home_icon.png) no-repeat;}
+
+.icon_message{background:url(message_icon.png) no-repeat;}
+
+.icon_notification{background:url(notification_icon.png) no-repeat;}
+
+.right_side_nav{float:right;}
+
+.search{float:left;}
+
+.form_search{float: left; height: 33px; margin: 7px 15px 0px 0px; font-size: 12px; width: 221px;}
+
+.search_input{display: block; box-sizing: border-box; width: 100%; height: 32px; padding: 5px 27px 6px 12px; font-size: 12px; line-height: 1; color: #292F33;
+				background-color: #F5F8FA; border: 1px solid #E1E8ED; border-radius: 21px; transition: all 0.2s ease-in-out 0s;}
+
+.right_actions{float:left;}
+
+.right_actions li{float:left; padding: 0px 4px 0px 14px;}
+
+.right_actions_user{}
+
+.right_actions_squawk{color:#fff; background:#8a018c;}
+
+.icon_user{background:url(user_icon.png) no-repeat; background-color:#8a018c;}
+
+#page_outer{}
+
+.app_content{padding: 56px 14px 15px; position:relative;}
+
+.app_left_side{float:left; width:290px; }
+
+.dashboard_profile{ height:195px; background:#fff; margin-bottom: 10px; border: 1px solid rgb(138, 1, 140);}
+
+.dashboard_trends{padding:15px; height:500px; background:#fff; border: 2px solid rgb(138, 1, 140);}
+
+.app_center{float:left; width:590px; height:1000px; background:#fff; margin: 0px 10px; border: 1px solid rgb(138, 1, 140);}
+
+.app_center_squawk_box{height:56px; background:#CCC;}
+
+.app_center_squawk_area{}
+
+.app_center_squawk_profile_img{}
+
+.app_center_squawk_feild{}
+
+.app_right_side{float:left; width:290px;}
+
+.dashboard_follow_sugg{padding:15px; height:400px; background:#fff; border: 1px solid rgb(138, 1, 140);}
+
+</style>
+<body>
+
+
+<div class="top_bar">
+	<div class="top_nav">
+    	<div class="top_nav_inner">
+        	<div class="container">
+            	<div class="logo"></div><!--end .logo -->
+                <div class="left_side_nav">
+                	<ul class="left_actions">
+                    	<li><span class="icon icon_home"></span>Home</li>
+                        <li><span class="icon icon_message"></span>Messages</li>
+                        <li><span class="icon icon_notification"></span>Notifications</li>
+                    </ul><!--end .left_actions -->
+                </div><!--end .left_side_nav -->
+                <div class="right_side_nav">
+                	<div class="search">
+                    	<form class="form_search">
+                        	<input class="search_input" type="text" spellcheck="false" autocomplete="off" placeholder="Search parrot"></input>
+                        </form>
+                    </div><!-- end .search -->
+                    <ul class="right_actions">
+                    	<li class="right_actions_user"><span class="icon icon_user"></span></li>
+                        <li class="right_actions_squawk">Squawk</li>
+                    </ul><!--end .right_acions -->
+                </div><!--end .right_side_nav -->
+            </div><!--end .container -->
+        </div><!-- end .top_nav_inner --> 
+	</div><!-- end .top_nav -->
+</div><!--end .top_bar -->
+<div id="page_outer" class="app_content container">
+
+
+    <div class="app_left_side">
+    	<div class="dashboard_profile">
+        
+        </div><!-- end .dashboard_profile-->
+    	<div class="dashboard_trends">
+        
+        </div><!-- end .dashboard_trends-->         
+    </div><!-- end .app_left_side -->
+    <div class="app_center">
+    	<div class="app_center_squawk_box">
+    	</div><!--end .app_center_squawk_box -->
+    </div><!-- end .app_center_side -->
+    <div class="app_right_side">
+    	<div class="dashboard_follow_sugg">
+        
+        </div><!--end .dashboard_follow_sugg -->
+    </div><!-- end .app_right_side -->
+
+</div><!-- end #page_outer -->
+
+</body>
+</html>
